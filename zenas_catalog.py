@@ -27,7 +27,7 @@ option = sl.selectbox('pick a sweatsuit color or style:', list(color_list))
 
 # We'll build the image caption now, since we can
 product_caption = 'Our warm, comortable, ' + option + ' sweatsuit!'
-print(product_caption)
+sl.write(product_caption)
 
 # Use the option selected to go bacj and get all the info from the database
 #my_cur.execute('SELECT direct_url, price, size_list, upsell_product_desc FROM catalog_for_website WHERE color_or_style = ' + option + ';')
